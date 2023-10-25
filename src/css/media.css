@@ -1,0 +1,5 @@
+@media (max-width: 517px) {
+  .header__burger {
+    display: block;
+  }
+}

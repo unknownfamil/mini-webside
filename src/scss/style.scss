@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    ::selection {   background-color: #bfdcea;  }
+
+}
+@import url("../libs/bootstrap/bootstrap.min.css");
+@property --rotate{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.banner{
+    background-image: conic-gradient(from var(--rotate),
+    
+    #233d47,
+    #fff 50%);
+    animation: effectBg 5s linear infinite;
+}
+@keyframes effectBg{
+    from{
+        --rotate: 0deg;
+    }to{
+        --rotate: -360deg;
+    }
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Source+Code+Pro:wght@600&display=swap');
+
+.container{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.pluse{
+    // position: relative;
+    width: 30px;
+    height: 30px;
+    // border-radius: 50%;
+    background-image: conic-gradient(from var(--rotate),
+    
+    #233d47,
+    #fff 50%);
+    animation: effectBg 5s linear infinite;
+}
+
+// @keyframes pluse {
+//     0%{
+//         top: 30px;
+//         left: 30px;
+//         width: 0;
+//         height: 0;
+//         opacity: 0;
+//     }
+//     100%{
+//         top: 0;
+//         left: 0;
+//         width: 30px;
+//         height: 30px;
+//         opacity: 1;
+//     }
+// }
+
+@import "header";
+@import "home";
+@import "media";
